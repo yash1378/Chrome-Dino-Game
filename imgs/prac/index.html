@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+            
+    <p id="a1" style="border:2px solid red; height:50px; width:1500px; position:absolute; top:300px;"></p>
+    <p id="a2"></p>
+    <button class="btn" onclick="jump()">Press</button>
+    </main>
+
+
+    <script>
+        let i=0;
+        function paint(){
+            document.getElementById("a2").innerHTML=i;
+            let a = 1500;
+            document.getElementById("a1").style.width = `${a-i}px`;
+            i++;
+            if(i<800){
+                window.requestAnimationFrame(paint);
+            }
+
+
+        }
+        window.requestAnimationFrame(paint);
+        function jump() {
+            // Set the character's vertical velocity to a negative value to make it jump
+            document.getElementById("a1").velocityY = +10;
+          }
+          
+
+
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+body{
+    overflow: hidden;
+}
+.cac {
+  position: absolute;
+  top: 0px;
+  left: 100vw;
+  height:440px;
+}
+.cac img{
+  position: absolute;
+  bottom:0px;
+  z-index: 5;
+}
+
+
+.track {
+    position: absolute;
+    top: 430px;
+    width: 100px;
+    height: 10px;
+    animation: groundmove 3s linear infinite;
+  }
+.dino{
+  position: absolute;
+  top: 0px;
+  height: 445px;
+  width: 95px;
+
+  left: 15vw;
+}
+
+#myimage1{
+  height: 95px;
+  width: 95px;
+  position: absolute;
+  bottom:0px;
+  z-index: 5;
+}
+
+#img1{
+    position: absolute;
+    top: 0vh;
+    left: 210px;
+}
+#img2{
+    position: absolute;
+    top: 0vh;
+    right: -120px;
+}
+  @keyframes groundmove {
+    from {
+      right: 0;
+    }
+    to {
+      right: calc(100% - 100px);
+    }
+  }
+.sc{
+  position:absolute;
+  top:25vh;
+  right:10vw;
+  font-size: 50px;
+}
+.high{
+  position:absolute;
+  top:15vh;
+  right:10vw;
+  font-size: 50px;
+}
+
